@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import Clarifai
 
 class ViewController: UIViewController {
+    
+    var app = ClarifaiApp(apiKey: "b3780911900f448ab1f30a9dc4171787")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+    }
+    
+    func getPrediction() {
+        model = app?.getModels(<#T##page: Int32##Int32#>, resultsPerPage: <#T##Int32#>, completion: <#T##ClarifaiModelsCompletion!##ClarifaiModelsCompletion!##([ClarifaiModel]?, Error?) -> Void#>)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 
 }
