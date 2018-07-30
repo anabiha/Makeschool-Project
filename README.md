@@ -6,9 +6,9 @@ This app is ideal for those who like the explore places around them without the 
 [WORK ON THIS]
 # Technical
 ## Models
-Image Data - The image the user uploads will be run through an image analysis API and will return an array of tags that are relevant to the image
-Location Data - App will take current user location to find places in their area
-Places Data - an array of locations that are relavant to the tags 
+- Image Data - The image the user uploads will be run through an image analysis API and will return an array of tags that are relevant to the image
+- Location Data - App will take current user location to find places in their area
+- Places Data - an array of locations that are relavant to the tags 
 ## Views
 [What custom views do we need to create? Include pictures of your prototypes/sketches!]
 ## Controllers
