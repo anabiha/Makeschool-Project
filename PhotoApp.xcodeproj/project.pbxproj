@@ -48,9 +48,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3578F145210FBBF3006A108D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3578F146210FBBFF006A108D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35E0A5DB210A3C8F00C4A008 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3578F147210FBC05006A108D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35E0A5D9210A3C8F00C4A008 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3578F1482110ACC7006A108D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		35E0A5CB210A3C8F00C4A008 = {
 			isa = PBXGroup;
 			children = (
+				3578F1482110ACC7006A108D /* Helper */,
+				3578F147210FBC05006A108D /* Controller */,
+				3578F146210FBBFF006A108D /* View */,
+				3578F145210FBBF3006A108D /* Model */,
 				35E0A5D6210A3C8F00C4A008 /* PhotoApp */,
 				35E0A5D5210A3C8F00C4A008 /* Products */,
 				5629FCE62939F5296FACACA8 /* Pods */,
@@ -70,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				35E0A5D7210A3C8F00C4A008 /* AppDelegate.swift */,
-				35E0A5D9210A3C8F00C4A008 /* ViewController.swift */,
-				35E0A5DB210A3C8F00C4A008 /* Main.storyboard */,
 				35E0A5DE210A3C9100C4A008 /* Assets.xcassets */,
 				35E0A5E0210A3C9100C4A008 /* LaunchScreen.storyboard */,
 				35E0A5E3210A3C9100C4A008 /* Info.plist */,
@@ -100,6 +132,7 @@
 				35E0A5D1210A3C8F00C4A008 /* Frameworks */,
 				35E0A5D2210A3C8F00C4A008 /* Resources */,
 				31D013CDA9345EE211F78556 /* [CP] Embed Pods Frameworks */,
+				0F727A638CD07FA6BF0AB82B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +190,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F727A638CD07FA6BF0AB82B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhotoApp/Pods-PhotoApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoApp/Pods-PhotoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		31D013CDA9345EE211F78556 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
