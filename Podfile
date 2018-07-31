@@ -9,5 +9,8 @@ target 'PhotoApp' do
 pod 'Clarifai'
 pod 'Alamofire'
 pod 'SwiftyJSON'
+pod 'GooglePlaces'
+pod 'GooglePlacePicker'
+pod 'GoogleMaps'
 
 end

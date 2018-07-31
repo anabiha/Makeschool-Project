@@ -64,6 +64,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
+## GoogleMaps
+
+Copyright 2018 Google
+
+## GooglePlacePicker
+
+Copyright 2018 Google
+
+## GooglePlaces
+
+Copyright 2018 Google
+
 ## SwiftyJSON
 
 The MIT License (MIT)
